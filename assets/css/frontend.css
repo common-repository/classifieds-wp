@@ -1,0 +1,1400 @@
+.clearfix {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+@font-face {
+  font-family: 'classified-manager';
+  src: url('../font/classified-manager.eot?4963673');
+  src: url('../font/classified-manager.eot?4963673#iefix') format('embedded-opentype'), url('../font/classified-manager.woff?4963673') format('woff'), url('../font/classified-manager.ttf?4963673') format('truetype'), url('../font/classified-manager.svg?4963673#classified-manager') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.jm-icon {
+  font-family: "classified-manager" !important;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+}
+/* Primary colour for buttons (alt) */
+/* Text on primary colour bg */
+/* Secondary buttons */
+/* Text on secondary colour bg */
+/* Prices, In stock labels, sales flash */
+/* Text on highlight colour bg */
+/* Content BG - Tabs (active state) */
+/* small, breadcrumbs etc */
+.display-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "classified-manager" !important;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+  font-size: 16px;
+  margin: 0 2px 0 0;
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* =Global styles/layout
+-------------------------------------------------------------- */
+.classified-manager-message,
+.classified-manager-error,
+.classified-manager-info {
+  padding: 1em 2em 1em 3.5em !important;
+  margin: 0 0 2em !important;
+  position: relative;
+  background-color: #ffffff;
+  color: #666666;
+  border: 1px solid #eee;
+  border-top: 3px solid #999999;
+  list-style: none outside !important;
+  width: auto;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+.classified-manager-message:before,
+.classified-manager-error:before,
+.classified-manager-info:before,
+.classified-manager-message:after,
+.classified-manager-error:after,
+.classified-manager-info:after {
+  content: "";
+  display: table;
+}
+.classified-manager-message:after,
+.classified-manager-error:after,
+.classified-manager-info:after {
+  clear: both;
+}
+.classified-manager-message:before,
+.classified-manager-error:before,
+.classified-manager-info:before {
+  content: "";
+  font-family: sans-serif;
+  display: inline-block;
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
+}
+.classified-manager-message ul,
+.classified-manager-error ul,
+.classified-manager-info ul {
+  margin: 0;
+}
+.classified-manager-message li,
+.classified-manager-error li,
+.classified-manager-info li {
+  list-style: none outside !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+.classified-manager-message.classified-manager-message,
+.classified-manager-error.classified-manager-message,
+.classified-manager-info.classified-manager-message {
+  border-top-color: #8fae1b;
+}
+.classified-manager-message.classified-manager-message:before,
+.classified-manager-error.classified-manager-message:before,
+.classified-manager-info.classified-manager-message:before {
+  color: #8fae1b;
+  content: "\2713";
+}
+.classified-manager-message.classified-manager-info,
+.classified-manager-error.classified-manager-info,
+.classified-manager-info.classified-manager-info {
+  border-top-color: #1e85be;
+}
+.classified-manager-message.classified-manager-info:before,
+.classified-manager-error.classified-manager-info:before,
+.classified-manager-info.classified-manager-info:before {
+  color: #1e85be;
+  content: "i";
+  font-family: Times, Georgia, serif;
+  font-style: italic;
+}
+.classified-manager-message.classified-manager-error,
+.classified-manager-error.classified-manager-error,
+.classified-manager-info.classified-manager-error {
+  border-top-color: #b81c23;
+}
+.classified-manager-message.classified-manager-error:before,
+.classified-manager-error.classified-manager-error:before,
+.classified-manager-info.classified-manager-error:before {
+  color: #b81c23;
+  content: "\00d7";
+  font-weight: 700;
+}
+.classified-manager-form fieldset {
+  margin: 0 0 1em 0;
+  padding: 0 0 1em 0;
+  line-height: 2em;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+.classified-manager-form fieldset:before,
+.classified-manager-form fieldset:after {
+  content: "";
+  display: table;
+}
+.classified-manager-form fieldset:after {
+  clear: both;
+}
+.classified-manager-form fieldset label {
+  display: block;
+  margin: 0;
+  width: 29%;
+  float: left;
+  vertical-align: middle;
+}
+.classified-manager-form fieldset label small {
+  opacity: .75;
+  font-size: 0.83em;
+}
+.classified-manager-form fieldset div.field {
+  width: 70%;
+  float: right;
+  vertical-align: middle;
+}
+.classified-manager-form fieldset .wp-editor-container {
+  border: 1px solid #eee;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.classified-manager-form fieldset .account-sign-in .button {
+  margin-right: .5em;
+}
+.classified-manager-form fieldset .account-sign-in .button:before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "classified-manager" !important;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+  font-size: 16px;
+  margin: 0 2px 0 0;
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+  content: '\e808';
+}
+.classified-manager-form fieldset abbr.required {
+  color: red;
+  font-weight: bold;
+  border: 0;
+}
+.classified-manager-form fieldset input.input-text,
+.classified-manager-form fieldset textarea,
+.classified-manager-form fieldset select {
+  margin: 0;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+.classified-manager-form fieldset small.description {
+  opacity: .75;
+  font-size: 0.83em;
+  margin: 1.2em 0 0 0;
+  display: block;
+  line-height: 1.2em;
+}
+.classified-manager-form fieldset .classified-manager-uploaded-files {
+  display: table;
+}
+.classified-manager-form fieldset .classified-manager-uploaded-files .classified-manager-uploaded-file {
+  line-height: 2em;
+  font-style: italic;
+  margin-bottom: 1em;
+  display: block;
+}
+.classified-manager-form fieldset .classified-manager-uploaded-files .classified-manager-uploaded-file .classified-manager-uploaded-file-preview img {
+  height: 64px;
+  margin: 0;
+  vertical-align: top;
+}
+.classified-manager-form fieldset .classified-manager-uploaded-files .classified-manager-uploaded-file .classified-manager-uploaded-file-preview a {
+  line-height: 64px;
+  display: inline-block;
+  padding: 0 0 0 1em;
+}
+.classified-manager-form fieldset .classified-manager-uploaded-files .classified-manager-uploaded-file .classified-manager-uploaded-file-name {
+  display: block;
+}
+.classified-manager-form .submit-classified {
+  padding: 1em 0;
+}
+.classified-manager-form .classified-manager-term-checklist {
+  list-style: none outside;
+  max-height: 200px;
+  overflow: auto;
+  margin: 0;
+}
+.classified-manager-form .classified-manager-term-checklist li {
+  list-style: none outside;
+  margin: 0;
+  display: block;
+  float: none;
+}
+.classified-manager-form .classified-manager-term-checklist li label {
+  width: auto;
+  float: none;
+}
+.classified-manager-form .classified-manager-term-checklist li li {
+  margin: 0 0 0 2em;
+}
+.classified-manager-form fieldset label.classified-manager-validator-error {
+  width: 100%;
+  padding: 0 5px;
+  border-bottom: 1px solid #B81C23;
+  border-left: 5px solid #B81C23;
+  font-size: 12px;
+  font-weight: 700;
+}
+div.classified_listings {
+  margin-bottom: 1em;
+}
+div.classified_listings ul.classified_listings {
+  margin: 0;
+}
+.rp4wp-related-classified_listing > ul,
+.classified_listings {
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #eee;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.rp4wp-related-classified_listing > ul.loading,
+.classified_listings.loading {
+  min-height: 96px;
+  border-bottom: 1px solid #eee;
+  background: url(../images/ajax-loader.gif) no-repeat center 32px;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-1,
+.classified_listings .classified-columns-1 {
+  clear: both;
+  display: table-row;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-1 article:first-child:nth-last-child(1),
+.classified_listings .classified-columns-1 article:first-child:nth-last-child(1) {
+  width: 100%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-2,
+.classified_listings .classified-columns-2 {
+  clear: both;
+  display: table-row;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-2 article:first-child:nth-last-child(2),
+.classified_listings .classified-columns-2 article:first-child:nth-last-child(2),
+.rp4wp-related-classified_listing > ul .classified-columns-2 article:first-child:nth-last-child(2) ~ article,
+.classified_listings .classified-columns-2 article:first-child:nth-last-child(2) ~ article {
+  width: 50%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-2 article:first-child:nth-last-child(-n+1),
+.classified_listings .classified-columns-2 article:first-child:nth-last-child(-n+1) {
+  width: 50%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-3,
+.classified_listings .classified-columns-3 {
+  clear: both;
+  display: table-row;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-3 article:first-child:nth-last-child(3),
+.classified_listings .classified-columns-3 article:first-child:nth-last-child(3),
+.rp4wp-related-classified_listing > ul .classified-columns-3 article:first-child:nth-last-child(3) ~ article,
+.classified_listings .classified-columns-3 article:first-child:nth-last-child(3) ~ article {
+  width: 33.3333%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-3 article:first-child:nth-last-child(-n+2),
+.classified_listings .classified-columns-3 article:first-child:nth-last-child(-n+2),
+.rp4wp-related-classified_listing > ul .classified-columns-3 article:first-child:nth-last-child(-n+2) ~ article,
+.classified_listings .classified-columns-3 article:first-child:nth-last-child(-n+2) ~ article {
+  width: 33.3333%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-3 article:first-child:nth-last-child(-n+1),
+.classified_listings .classified-columns-3 article:first-child:nth-last-child(-n+1) {
+  width: 33.3333%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-4,
+.classified_listings .classified-columns-4 {
+  clear: both;
+  display: table-row;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-4 article:first-child:nth-last-child(4),
+.classified_listings .classified-columns-4 article:first-child:nth-last-child(4),
+.rp4wp-related-classified_listing > ul .classified-columns-4 article:first-child:nth-last-child(4) ~ article,
+.classified_listings .classified-columns-4 article:first-child:nth-last-child(4) ~ article {
+  width: 25%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-4 article:first-child:nth-last-child(-n+3),
+.classified_listings .classified-columns-4 article:first-child:nth-last-child(-n+3),
+.rp4wp-related-classified_listing > ul .classified-columns-4 article:first-child:nth-last-child(-n+3) ~ article,
+.classified_listings .classified-columns-4 article:first-child:nth-last-child(-n+3) ~ article {
+  width: 25%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-4 article:first-child:nth-last-child(-n+2),
+.classified_listings .classified-columns-4 article:first-child:nth-last-child(-n+2),
+.rp4wp-related-classified_listing > ul .classified-columns-4 article:first-child:nth-last-child(-n+2) ~ article,
+.classified_listings .classified-columns-4 article:first-child:nth-last-child(-n+2) ~ article {
+  width: 25%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-4 article:first-child:nth-last-child(-n+1),
+.classified_listings .classified-columns-4 article:first-child:nth-last-child(-n+1) {
+  width: 25%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-5,
+.classified_listings .classified-columns-5 {
+  clear: both;
+  display: table-row;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-5 article:first-child:nth-last-child(5),
+.classified_listings .classified-columns-5 article:first-child:nth-last-child(5),
+.rp4wp-related-classified_listing > ul .classified-columns-5 article:first-child:nth-last-child(5) ~ article,
+.classified_listings .classified-columns-5 article:first-child:nth-last-child(5) ~ article {
+  width: 20%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-5 article:first-child:nth-last-child(-n+4),
+.classified_listings .classified-columns-5 article:first-child:nth-last-child(-n+4),
+.rp4wp-related-classified_listing > ul .classified-columns-5 article:first-child:nth-last-child(-n+4) ~ article,
+.classified_listings .classified-columns-5 article:first-child:nth-last-child(-n+4) ~ article {
+  width: 20%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-5 article:first-child:nth-last-child(-n+3),
+.classified_listings .classified-columns-5 article:first-child:nth-last-child(-n+3),
+.rp4wp-related-classified_listing > ul .classified-columns-5 article:first-child:nth-last-child(-n+3) ~ article,
+.classified_listings .classified-columns-5 article:first-child:nth-last-child(-n+3) ~ article {
+  width: 20%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-5 article:first-child:nth-last-child(-n+2),
+.classified_listings .classified-columns-5 article:first-child:nth-last-child(-n+2),
+.rp4wp-related-classified_listing > ul .classified-columns-5 article:first-child:nth-last-child(-n+2) ~ article,
+.classified_listings .classified-columns-5 article:first-child:nth-last-child(-n+2) ~ article {
+  width: 20%;
+}
+.rp4wp-related-classified_listing > ul .classified-columns-5 article:first-child:nth-last-child(-n+1),
+.classified_listings .classified-columns-5 article:first-child:nth-last-child(-n+1) {
+  width: 20%;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing,
+.classified_listings article.classified_listing,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found,
+.classified_listings article.no_classified_listings_found {
+  list-style: none outside;
+  padding: 0;
+  margin: 0;
+  display: table-cell;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing.classified_listing_unavailable a,
+.classified_listings article.classified_listing.classified_listing_unavailable a,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found.classified_listing_unavailable a,
+.classified_listings article.no_classified_listings_found.classified_listing_unavailable a {
+  opacity: 0.25;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing.no_classified_listings_found,
+.classified_listings article.classified_listing.no_classified_listings_found,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found.no_classified_listings_found,
+.classified_listings article.no_classified_listings_found.no_classified_listings_found {
+  padding: 1em;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing a,
+.classified_listings article.classified_listing a,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a,
+.classified_listings article.no_classified_listings_found a {
+  display: block;
+  padding: 1em;
+  border: 0;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  box-shadow: none;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing a:hover,
+.classified_listings article.classified_listing a:hover,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a:hover,
+.classified_listings article.no_classified_listings_found a:hover,
+.rp4wp-related-classified_listing > ul article.classified_listing a:focus,
+.classified_listings article.classified_listing a:focus,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a:focus,
+.classified_listings article.no_classified_listings_found a:focus {
+  background-color: #fcfcfc;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing a img.classified_featured_image,
+.classified_listings article.classified_listing a img.classified_featured_image,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a img.classified_featured_image,
+.classified_listings article.no_classified_listings_found a img.classified_featured_image {
+  vertical-align: middle;
+  box-shadow: none;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing a .classified-title,
+.classified_listings article.classified_listing a .classified-title,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a .classified-title,
+.classified_listings article.no_classified_listings_found a .classified-title {
+  padding: 0.5em;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing a .classified-title h3,
+.classified_listings article.classified_listing a .classified-title h3,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a .classified-title h3,
+.classified_listings article.no_classified_listings_found a .classified-title h3 {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  font-size: inherit;
+  text-align: center;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing a .classified-title .classified-location,
+.classified_listings article.classified_listing a .classified-title .classified-location,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a .classified-title .classified-location,
+.classified_listings article.no_classified_listings_found a .classified-title .classified-location {
+  color: #999;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing a .classified-title .classified-location .classified-price,
+.classified_listings article.classified_listing a .classified-title .classified-location .classified-price,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a .classified-title .classified-location .classified-price,
+.classified_listings article.no_classified_listings_found a .classified-title .classified-location .classified-price {
+  margin-left: .5em;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing a .classified-location,
+.classified_listings article.classified_listing a .classified-location,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a .classified-location,
+.classified_listings article.no_classified_listings_found a .classified-location {
+  float: left;
+  text-align: left;
+  width: 25%;
+  padding: 0 0 0 1em;
+  color: #999;
+  line-height: 1.5em;
+  display: none;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing a .classified-listing-meta,
+.classified_listings article.classified_listing a .classified-listing-meta,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a .classified-listing-meta,
+.classified_listings article.no_classified_listings_found a .classified-listing-meta {
+  float: right;
+  text-align: right;
+  width: 20%;
+  padding: 0 0 0 1em;
+  margin: 0;
+  line-height: 1.5em;
+  color: #999;
+  list-style: none outside;
+  display: none;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing a .classified-listing-meta li,
+.classified_listings article.classified_listing a .classified-listing-meta li,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a .classified-listing-meta li,
+.classified_listings article.no_classified_listings_found a .classified-listing-meta li {
+  list-style: none outside;
+  display: block;
+  margin: 0;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing a .classified-listing-meta .classified-type,
+.classified_listings article.classified_listing a .classified-listing-meta .classified-type,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found a .classified-listing-meta .classified-type,
+.classified_listings article.no_classified_listings_found a .classified-listing-meta .classified-type {
+  font-weight: bold;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing.classified_listing_featured,
+.classified_listings article.classified_listing.classified_listing_featured,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found.classified_listing_featured,
+.classified_listings article.no_classified_listings_found.classified_listing_featured {
+  background: #fefee5;
+}
+.rp4wp-related-classified_listing > ul article.classified_listing.classified_listing_featured:hover,
+.classified_listings article.classified_listing.classified_listing_featured:hover,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found.classified_listing_featured:hover,
+.classified_listings article.no_classified_listings_found.classified_listing_featured:hover,
+.rp4wp-related-classified_listing > ul article.classified_listing.classified_listing_featured:focus,
+.classified_listings article.classified_listing.classified_listing_featured:focus,
+.rp4wp-related-classified_listing > ul article.no_classified_listings_found.classified_listing_featured:focus,
+.classified_listings article.no_classified_listings_found.classified_listing_featured:focus {
+  background-color: #fefed8;
+}
+.widget ul.classified_listings {
+  list-style-type: none;
+}
+.widget ul.classified_listings li.classified_listing a {
+  padding: 1em 0;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+.widget ul.classified_listings li.classified_listing .listing {
+  float: none;
+  width: auto;
+  padding: 0;
+}
+.widget ul.classified_listings li.classified_listing ul.meta {
+  float: none;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.widget ul.classified_listings li.classified_listing ul.meta li {
+  float: none;
+  display: table-cell;
+  padding: 0;
+  padding: 0 .5em;
+  font-weight: normal;
+  border-right: 1px solid #eee;
+}
+.widget ul.classified_listings li.classified_listing ul.meta li:first-child {
+  padding-left: 0;
+}
+.widget ul.classified_listings li.classified_listing ul.meta li:last-child {
+  border-right: none;
+}
+.widget ul.classified_listings li.classified_listing ul.meta li:empty {
+  display: none;
+}
+.classified-manager-media-viewer.media-modal {
+  font-family: sans-serif !important;
+  font-size: 12px!important;
+  line-height: 1.4em;
+}
+.classified-manager-media-viewer.media-modal .screen-reader-text,
+.classified-manager-media-viewer.media-modal .screen-reader-text span,
+.classified-manager-media-viewer.media-modal .ui-helper-hidden-accessible {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+  word-wrap: normal !important;
+}
+.classified-manager-media-viewer.media-modal select {
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  background: none;
+}
+.classified-manager-media-viewer.media-modal [type=search] {
+  height: 28px;
+  border-radius: 0;
+  background-color: #fff;
+}
+.classified-manager-media-viewer.media-modal img {
+  max-width: inherit;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+  background: initial;
+  border: 0;
+}
+.classified-manager-media-viewer.media-modal .thumbnail {
+  border: 0;
+  box-shadow: none;
+}
+.classified-manager-media-viewer.media-modal .attachments .thumbnail {
+  margin: 0;
+  background-color: #eee;
+  border: 0;
+}
+.classified-manager-media-viewer.media-modal .media-frame-title h1 {
+  font-family: sans-serif !important;
+  font-size: 22px!important;
+  font-weight: normal;
+}
+.classified-manager-media-viewer.media-modal h2 {
+  font-family: sans-serif !important;
+  font-size: 12px!important;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-shadow: none;
+}
+.classified-manager-media-viewer.media-modal .uploader-inline h2 {
+  font-size: 20px!important;
+}
+.classified-manager-media-viewer.media-modal button,
+.classified-manager-media-viewer.media-modal input,
+.classified-manager-media-viewer.media-modal optgroup,
+.classified-manager-media-viewer.media-modal select,
+.classified-manager-media-viewer.media-modal textarea {
+  font-family: sans-serif !important;
+  text-shadow: none;
+}
+.classified-manager-media-viewer.media-modal button.media-button-backToLibrary {
+  margin-right: 10px;
+}
+.classified-manager-media-viewer.media-modal .button-link {
+  font-family: sans-serif !important;
+  font-size: 12px!important;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: normal;
+  text-shadow: none;
+}
+.classified-manager-media-viewer.media-modal .media-button-insert {
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: none;
+  letter-spacing: inherit;
+  line-height: inherit;
+  font-family: inherit;
+}
+.classified-manager-media-viewer.media-modal .button[disabled]:hover,
+.classified-manager-media-viewer.media-modal button[disabled]:hover {
+  text-transform: inherit;
+  letter-spacing: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+.classified-manager-media-viewer .classified-manager-media-viewer-actions {
+  position: relative;
+  float: right;
+  text-align: center;
+}
+.classified-manager-media-viewer .classified-manager-media-viewer-actions small {
+  opacity: .75;
+  font-size: .73em;
+}
+.classified-manager-media-viewer-spinner {
+  position: absolute;
+  left: -29px;
+  line-height: 2.5em;
+}
+.classified-manager-media-viewer-spinner img {
+  background-size: 20px 20px;
+  display: inline-block;
+  opacity: .7;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+.classified-manager-form .classified_images_gallery,
+.single_classified_listing .classified_images_gallery {
+  display: flex;
+  border: 1px solid #eee;
+}
+.classified-manager-form .classified_images_gallery a,
+.single_classified_listing .classified_images_gallery a {
+  float: left;
+  text-decoration: none;
+  box-shadow: none;
+  border: 0;
+}
+.classified-manager-form .classified_images_gallery a:first-of-type,
+.single_classified_listing .classified_images_gallery a:first-of-type {
+  border: 5px solid #eee;
+  background: #eee;
+}
+.classified-manager-form .classified_images_gallery a:not(:first-of-type),
+.single_classified_listing .classified_images_gallery a:not(:first-of-type) {
+  padding-top: 10px;
+}
+.single_classified_listing .classified_images {
+  border: 1px solid #eee;
+  position: relative;
+  margin: 0 0 2em;
+}
+.single_classified_listing .classified_images .classified-price {
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0.5em 1em;
+  bottom: -1px;
+  left: -1px;
+  background: #f9f9f9;
+  background: rgba(255, 255, 255, 0.95);
+  border-right: 1px solid #eee;
+  border-top: 1px solid #eee;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.single_classified_listing .classified_images .classified-price-inline {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}
+.single_classified_listing .classified-listing-meta {
+  position: relative;
+  border: 1px solid #eee;
+  padding: 1em;
+  margin: 0 0 2em;
+  display: block;
+  clear: both;
+  min-height: 3em;
+}
+.single_classified_listing .classified-listing-meta img {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  left: 1em;
+  float: left;
+  vertical-align: middle;
+  box-shadow: none;
+}
+.single_classified_listing .classified-listing-meta .website:before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "classified-manager" !important;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+  font-size: 16px;
+  margin: 0 2px 0 0;
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+  content: '\e809';
+}
+.single_classified_listing .meta {
+  list-style: none outside;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  zoom: 1;
+  clear: both;
+}
+.single_classified_listing .meta li {
+  margin: 0 1em 0 0;
+  padding: .5em;
+  float: left;
+  line-height: 1em;
+  color: #999;
+}
+.single_classified_listing .meta .classified-price-inline {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}
+.single_classified_listing .meta .classified-type {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}
+.single_classified_listing .meta .classified-type.new {
+  background-color: #42a2ce;
+  border: 1px solid #42a2ce;
+  color: #fff;
+}
+.single_classified_listing .meta .listing-unavailable,
+.single_classified_listing .meta .listing-expired {
+  color: #b81c23;
+}
+.single_classified_listing .meta .location:before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "classified-manager" !important;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+  font-size: 16px;
+  margin: 0 2px 0 0;
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+  content: '\e81d';
+}
+.single_classified_listing .meta .date-posted:before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "classified-manager" !important;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+  font-size: 16px;
+  margin: 0 2px 0 0;
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+  content: '\e80f';
+}
+.single_classified_listing .meta .listing-unavailable:before,
+.single_classified_listing .meta .listing-expired:before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "classified-manager" !important;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+  font-size: 16px;
+  margin: 0 2px 0 0;
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+  content: '\e80e';
+}
+.single_classified_listing .classified_description {
+  margin: 0 0 1.5em;
+}
+.classified-manager-contact-wrapper {
+  clear: both;
+  border: 1px solid #eee;
+  padding: .75em 1em 0;
+  margin: 1em 0;
+  line-height: 1.5em;
+  display: block;
+  position: relative;
+}
+.single_classified_listing .contact,
+.classified-manager-contact-wrapper .contact {
+  padding: 0;
+  margin: 0 0 1em;
+  overflow: hidden;
+}
+.single_classified_listing .contact .contact_button,
+.classified-manager-contact-wrapper .contact .contact_button,
+.single_classified_listing .contact .contact_details,
+.classified-manager-contact-wrapper .contact .contact_details {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+.single_classified_listing .contact .contact_button,
+.classified-manager-contact-wrapper .contact .contact_button {
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1em;
+  display: inline-block;
+  margin: 0 .5em 0 0;
+  padding: 0.90909091em 2em;
+  outline: 0;
+}
+.single_classified_listing .contact .contact_details,
+.classified-manager-contact-wrapper .contact .contact_details {
+  clear: both;
+  border: 1px solid #eee;
+  padding: .75em 1em 0;
+  margin: 1em 0;
+  line-height: 1.5em;
+  display: block;
+  position: relative;
+}
+.single_classified_listing .contact .contact_details p,
+.classified-manager-contact-wrapper .contact .contact_details p {
+  margin: 0 0 .75em;
+}
+.single_classified_listing .contact .contact_details:before,
+.classified-manager-contact-wrapper .contact .contact_details:before {
+  content: "";
+  position: absolute;
+  margin: -10px 0 0 0;
+  top: 0;
+  left: 5em;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #eee;
+}
+.single_classified_listing .contact .contact_details:after,
+.classified-manager-contact-wrapper .contact .contact_details:after {
+  content: "";
+  position: absolute;
+  margin: -9px 0 0 1px;
+  left: 5em;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #fff;
+}
+.classified_filters {
+  background: #eee;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+.classified_filters:before,
+.classified_filters:after {
+  content: "";
+  display: table;
+}
+.classified_filters:after {
+  clear: both;
+}
+.classified_filters .search_classifieds {
+  padding: 1em;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+.classified_filters .search_classifieds:before,
+.classified_filters .search_classifieds:after {
+  content: "";
+  display: table;
+}
+.classified_filters .search_classifieds:after {
+  clear: both;
+}
+.classified_filters .search_classifieds div {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+.classified_filters .search_classifieds div label {
+  display: none;
+}
+.classified_filters .search_classifieds div.search_keywords,
+.classified_filters .search_classifieds div.filter_first {
+  float: left;
+  padding-right: .5em;
+  width: 50%;
+}
+.classified_filters .search_classifieds div.search_location,
+.classified_filters .search_classifieds div.filter_last {
+  float: right;
+  padding-left: .5em;
+  width: 50%;
+}
+.classified_filters .search_classifieds div.search_categories,
+.classified_filters .search_classifieds div.filter_wide {
+  padding-top: .5em;
+  clear: both;
+  width: 100%;
+}
+.classified_filters .search_classifieds div .showing_classifieds a {
+  padding: .25em;
+}
+.classified_filters .search_classifieds div .showing_classifieds a.active {
+  background: #ddd;
+  text-decoration: none;
+}
+.classified_filters .search_classifieds input,
+.classified_filters .search_classifieds select {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  width: 100%;
+}
+.classified_filters .classified_types {
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+  font-size: 0.83em;
+  background: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+.classified_filters .classified_types:before,
+.classified_filters .classified_types:after {
+  content: "";
+  display: table;
+}
+.classified_filters .classified_types:after {
+  clear: both;
+}
+.classified_filters .classified_types li {
+  margin: 0;
+  padding: .5em 1em;
+  float: left;
+  border-right: 1px solid #eee;
+}
+.classified_filters .classified_types li:last-child {
+  border-right: 0;
+}
+.classified_filters .showing_classifieds {
+  padding: .5em 1em;
+  display: none;
+  font-size: 0.83em;
+  background: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.classified_filters .showing_classifieds a {
+  float: right;
+  padding-left: 10px;
+  border: 0;
+}
+div.classified_listings .classified-manager-pagination {
+  text-align: center;
+  display: block;
+  padding: 1em 0 1em 0;
+  border-bottom: 1px solid #eee;
+  line-height: 1;
+}
+div.classified_listings .load_previous {
+  border-top: 1px solid #eee;
+}
+div.classified_listings .load_more_classifieds + ul.classified_listings {
+  border-top: 0;
+}
+div.classified_listings .load_more_classifieds {
+  clear: both;
+  text-align: center;
+  display: block;
+  padding: 1em 1em 1em 2em;
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+}
+div.classified_listings .load_more_classifieds.loading {
+  background: url(../images/ajax-loader.gif) no-repeat center;
+}
+div.classified_listings .load_more_classifieds.loading strong {
+  visibility: hidden;
+}
+div.classified_listings .load_more_classifieds:hover,
+div.classified_listings .load_more_classifieds:focus {
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #eee;
+}
+.classified_listing_preview {
+  padding: 0 1em 1em;
+  border: 5px solid #eee;
+}
+.classified_listing_preview .entry-title {
+  font-size: 2.5rem;
+  line-height: 2em;
+  margin-bottom: 0;
+}
+.classified_listing_preview_title,
+.entry-content .classified_listing_preview_title {
+  padding: .5em 1em;
+  vertical-align: middle;
+  position: relative;
+  background: #eee;
+}
+.classified_listing_preview_title h2,
+.entry-content .classified_listing_preview_title h2 {
+  margin: 0;
+  clear: none;
+}
+.classified_listing_preview_title .button,
+.entry-content .classified_listing_preview_title .button {
+  float: right;
+  margin-left: .25em;
+}
+.classified_summary_shortcode {
+  border: 1px solid #eee;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+.classified_summary_shortcode.aligncenter {
+  display: block;
+  margin: 2em auto 2em;
+}
+.classified_summary_shortcode.alignleft {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+.classified_summary_shortcode.alignright {
+  float: right;
+  margin: 0 0 2em 2em;
+}
+.classified_summary_shortcode a {
+  text-decoration: none;
+  color: inherit;
+}
+.classified_summary_shortcode img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-top-left-radius: 3px;
+  -moz-border-top-right-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.classified_summary_shortcode .classified_summary_content {
+  padding: 1em;
+}
+.classified_summary_shortcode .meta {
+  font-style: italic;
+  color: #777;
+}
+.classified_summary_shortcode .classified-type {
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5em;
+  height: 1em;
+  width: auto;
+  min-width: 1em;
+  font-size: 1em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1em;
+  margin: -0.5em -0.5em 0 0;
+}
+.classified_summary_shortcode .classified-type.new {
+  background-color: #42a2ce;
+}
+.classified_summary_shortcode .classified-type.used {
+  background-color: #f9f9f9;
+}
+#classified-manager-classified-dashboard .account-sign-in .button {
+  margin-right: .5em;
+}
+#classified-manager-classified-dashboard .account-sign-in .button:before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "classified-manager" !important;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+  font-size: 16px;
+  margin: 0 2px 0 0;
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+  content: '\e808';
+}
+#classified-manager-classified-dashboard table ul.classified-dashboard-actions {
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+  font-size: 0.92em;
+}
+#classified-manager-classified-dashboard table ul.classified-dashboard-actions li {
+  float: none;
+  display: inline;
+  padding: 0;
+  margin: 0 .5em 0 0;
+  font-weight: normal;
+  list-style: none outside;
+}
+#classified-manager-classified-dashboard table ul.classified-dashboard-actions li:after {
+  padding: 0 0 0 .5em;
+  content: "\2023";
+}
+#classified-manager-classified-dashboard table ul.classified-dashboard-actions li:last-child:after {
+  content: '';
+}
+#classified-manager-classified-dashboard table ul.classified-dashboard-actions li .classified-dashboard-action-delete {
+  color: red;
+}
+#classified-manager-classified-dashboard table tr:hover ul.classified-dashboard-actions,
+#classified-manager-classified-dashboard table tr:focus ul.classified-dashboard-actions {
+  visibility: visible;
+}
+#classified-manager-classified-dashboard table td,
+#classified-manager-classified-dashboard table th {
+  padding: .5em 1em .5em 0;
+}
+#classified-manager-classified-dashboard table .classified_title small {
+  color: #999;
+}
+#classified-manager-classified-dashboard table .unavailable,
+#classified-manager-classified-dashboard table .expires,
+#classified-manager-classified-dashboard table .contacts {
+  text-align: center;
+}
+nav.classified-manager-pagination,
+#content nav.classified-manager-pagination {
+  text-align: center;
+}
+nav.classified-manager-pagination ul,
+#content nav.classified-manager-pagination ul {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0;
+  clear: both;
+  border-left: 1px solid #eee;
+  margin: 1px;
+}
+nav.classified-manager-pagination ul li,
+#content nav.classified-manager-pagination ul li {
+  border-right: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 0;
+  margin: 0;
+  float: left;
+  display: inline;
+  overflow: hidden;
+}
+nav.classified-manager-pagination ul li a,
+#content nav.classified-manager-pagination ul li a,
+nav.classified-manager-pagination ul li span,
+#content nav.classified-manager-pagination ul li span {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  line-height: 1em;
+  font-size: 1em;
+  font-weight: normal;
+  padding: .5em;
+  min-width: 1em;
+  display: block;
+  border: 0;
+}
+nav.classified-manager-pagination ul li span.current,
+#content nav.classified-manager-pagination ul li span.current,
+nav.classified-manager-pagination ul li a:hover,
+#content nav.classified-manager-pagination ul li a:hover,
+nav.classified-manager-pagination ul li a:focus,
+#content nav.classified-manager-pagination ul li a:focus {
+  background: #eee;
+  color: #888888;
+}
+/**
+ * Mobile styles
+ */
+@media only screen and (max-width: 767px) {
+  ul.classified_listings li.classified_listing a,
+  ul.classified_listings li.no_classified_listings_found a {
+    padding: 1em;
+  }
+  ul.classified_listings li.classified_listing a img.classified_featured_image,
+  ul.classified_listings li.no_classified_listings_found a img.classified_featured_image {
+    visibility: hidden;
+  }
+  ul.classified_listings li.classified_listing a div.listing,
+  ul.classified_listings li.no_classified_listings_found a div.listing {
+    float: left;
+    width: 60%;
+    padding: 0;
+  }
+  ul.classified_listings li.classified_listing a div.location,
+  ul.classified_listings li.no_classified_listings_found a div.location {
+    float: right;
+    width: 40%;
+    line-height: 2em;
+    font-size: .75em;
+    padding: 0 0 0 1em;
+    text-align: right;
+  }
+  ul.classified_listings li.classified_listing a .meta,
+  ul.classified_listings li.no_classified_listings_found a .meta {
+    float: right;
+    width: 40%;
+    line-height: 2em;
+    font-size: .75em;
+  }
+  ul.classified_listings li.classified_listing a .meta li,
+  ul.classified_listings li.no_classified_listings_found a .meta li {
+    font-size: 1em;
+  }
+}
+.chosen-container {
+  width: 100% !important;
+}
+.twenty-eleven ul.classified_listings li.classified_listing,
+.twenty-eleven ul.classified_listings li.no_classified_listings_found {
+  padding: 0 !important;
+}
+.twenty-ten .classified_types,
+.twenty-ten .chosen-choices {
+  margin: 0 !important;
+}
+.rtl .classified-manager-form label {
+  float: right;
+}
+.rtl .classified-manager-form div.field {
+  float: left;
+}
+.rtl .classified_listing_preview_title .button,
+.rtl .entry-content .classified_listing_preview_title .button {
+  float: left;
+}
+.rtl .single_classified_listing .meta li {
+  float: right;
+  margin: 0 0 0 1em;
+}
+@media screen and (max-width: 568px) {
+  .rp4wp-related-classified_listing > ul .classified-columns-1,
+  .classified_listings .classified-columns-1,
+  .rp4wp-related-classified_listing > ul .classified-columns-2,
+  .classified_listings .classified-columns-2,
+  .rp4wp-related-classified_listing > ul .classified-columns-3,
+  .classified_listings .classified-columns-3,
+  .rp4wp-related-classified_listing > ul .classified-columns-4,
+  .classified_listings .classified-columns-4,
+  .rp4wp-related-classified_listing > ul .classified-columns-5,
+  .classified_listings .classified-columns-5 {
+    display: block;
+    clear: none;
+  }
+  .rp4wp-related-classified_listing > ul article,
+  .classified_listings article {
+    width: 100% !important;
+    float: left;
+  }
+}
+/* Single Classified */
+.classified-manager-single {
+  width: 100%;
+  position: relative;
+  content: "";
+  display: table;
+  padding: 20px 0;
+}
+@media screen and (min-width: 56.875em) {
+  .classified-manager-main {
+    float: left;
+    margin-right: -100%;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 56.875em) {
+  .classified-manager-single-sidebar {
+    float: left;
+    margin-left: 75%;
+    padding: 0;
+    width: 25%;
+  }
+}
